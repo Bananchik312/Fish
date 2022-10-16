@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+*{
+    margin: 0;
+}
+
+hr{
+    margin-top: 10px;
+}
+
+a{
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 40px;
+    padding-top: 20px;
+}
+
+.border-1{
+    border: 1px solid black;
+    border-color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+*{
+    font-family: "Main";
+}
+
+.img--main{
+    max-width: 400px;
+    width: 30vw;
+    /* padding-top: 18vh; */
+}
+
+.body--main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+}
+
+.body--container{
+    /* padding-top: 18vh; */
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.body--c{
+    max-width: 550px;
+    font-size: 30px;
+}
+.body--h{
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.header--p{
+    font-size: 30px;
+    margin: auto 0px auto 0px;
+}
+
+.header--a{
+    padding-left: 20px;
+    font-size: 20px;
+    margin: auto;
+}
+
+@media (max-width: 1200px){
+    .body--c{font-size: 30px;}
+    .body--h{font-size: 45px;}
+    .header--p{font-size: 35px;}
+    .back-img{height: 80vh;}
+}
+
+@media (max-width: 992px){
+    .body--c{font-size: 33px;}
+    .body--h{font-size: 50px;}
+    .header--p{font-size: 40px;}
+    .back-img{height: 80vh;}
+    .body--main{flex-direction: column;}
+    .img--main{padding: 0; width: 60vw;}
+    .body--main{height: 75vh; justify-content: flex-start;}
+    .body--main *{margin-top: 20px;}
+}
+
+@media (max-width: 767px){
+    .body--c{font-size: 25px;}
+    .body--h{font-size: 45px;}
+    .header--p{font-size: 30px;}
+    .back-img{height: 80vh;}
+    header{flex-direction: column; padding: 20px 20px 0px 20px}
+    .link-bar{flex-direction: column;}
+    .header--a{margin-top: 10px;}
+}
+
+@media (max-width: 420px){
+    .body--c{font-size: 25px;}
+    .body--h{font-size: 45px;}
+    .header--p{font-size: 26px;}
+    .back-img{height: 80vh;}
+    header{flex-direction: column;}
+    .link-bar{flex-direction: column;}
+    .header--a{margin-top: 5px;}
+}
+
+@font-face {
+    font-family: "Main";
+    src: url(../fonts/Jost/Jost-VariableFont_wght.ttf);
+}
